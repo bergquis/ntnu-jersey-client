@@ -1,0 +1,18 @@
+<div class="page-header">
+    <h1>{{ norwegianName }} <small>{{ code }}</small></h1>
+</div>
+
+{{#each infoType}}
+<div class="intoType">
+    <h4>{{ this.name }}</h4>
+    <p>{{{ this.text }}}</p>
+</div>
+{{/each}}
+
+<hr/>
+
+{{#each subjectArea}}
+<div class="subjectArea">
+    <h6>{{ this.norwegianName }} <small>{{ this.code }}</small></h6>
+</div>
+{{/each}}
